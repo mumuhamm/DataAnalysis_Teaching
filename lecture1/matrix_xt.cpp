@@ -73,5 +73,21 @@ int main(int argc, char* argv[])
    auto carr = aarr + barr;
    std::cout <<"----------------------------"<< std::endl;
    std::cout <<carr<< std::endl;
+   
+   
+   xt::xarray<int> afull{{1,  2,  3,  4},
+      {5,  6,  7,  8},
+      {9,  10, 11, 12},
+      {13, 14, 15, 16}};
+   auto bpart = xt::view(afull, xt::range(1, 3), xt::range(1, 3));
+   
+   std::cout <<"----------------------------"<< std::endl;
+   std::cout <<bpart<< std::endl;
+   
+   auto mat = xt::random::rand<double>({2,2});
+   auto vect = xt::random::rand<double>({2,1});
+   auto cadd = mat + vect;
+   std::cout <<"----------------------------"<< std::endl;
+   std::cout <<cadd<< std::endl;
   return 0;
 }

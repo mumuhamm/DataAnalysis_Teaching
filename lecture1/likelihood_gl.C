@@ -79,8 +79,11 @@ using namespace std;
 void likelihood_gl(){
    Int_t nbins = 100;
   //RooRealVar *ReVL = new RooRealVar("ReVL","ReVL",-2.489, 0.504);
-  RooRealVar *RegL = new RooRealVar("RegL","RegL",-1.36, 0.83);
+  RooRealVar *RegL = new RooRealVar("RegL","RegL",-1.36, 0.83);//constrcutor
   RooRealVar *ImgL = new RooRealVar("ImgL","ImgL",-0.14, 0.49);
+
+// float myparvalue =   RegL->getValV();
+  // std::cout<<myparvalue<<"\n";
    
   RooRealVar * mean1 = new RooRealVar("mean1","Re(g_{R}^{V})", -1.3, .8);
   RooRealVar * sigma1 = new RooRealVar("sigma1","sigma1", 0, 1.5);
@@ -95,11 +98,11 @@ void likelihood_gl(){
   RooAddPdf * genmodel = new RooAddPdf("genmodel", "genmodel", RooArgList(*gaus1, *gaus2), RooArgList(*frac), true);
   RooDataSet* data = genmodel->generate(RooArgSet(*RegL,*ImgL),100000);
    
-   
+   //Extracting histograms
    auto glr_h =(TH1F*)data->createHistogram("glr_h", *RegL);
    auto gli_h =(TH1F*)data->createHistogram("gli_h", *ImgL);
    
-  
+  //Plotting histograms
    RooPlot* glr = RegL->frame(Title("#italic{Re}(g^{V}_{L})"),Bins(nbins));
    data->plotOn(glr,DataError(RooAbsData::SumW2));
    RooPlot* gli = ImgL->frame(Title("#italic{Im}(g^{V}_{L})"),Bins(nbins));
@@ -217,7 +220,7 @@ void likelihood_gl(){
    pullgli->Draw();
    cc->cd();
    
-    
+    //Likelihood
    
    
    Double_t amin,edm,errdef;
