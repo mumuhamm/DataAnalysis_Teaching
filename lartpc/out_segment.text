@@ -1,0 +1,129 @@
+10000 entries found!
+6015
+Label values: [0. 1. 2.]
+Label counts: [64935   236   365]
+particle_mctruth_tree contents:
+      [95mParticle  (PdgCode,TrackID) = (-211,0)[00m ... with Parent (-211,0)
+      Vertex   (x, y, z, t) = (54.6327,78.8265,90.7218,4246.39)
+      Momentum (px, py, pz) = (129.095,-56.0446,-432.816)
+      Inittial Energy  = 0.476042
+      Deposit  Energy  = 0
+      Creation Process = primary
+      Group ID = 65535
+      BBox3D:     (0,0,0) => (0,0,0)
+
+      [95mParticle  (PdgCode,TrackID) = (11,0)[00m ... with Parent (11,0)
+      Vertex   (x, y, z, t) = (54.6327,78.8265,90.7218,4246.39)
+      Momentum (px, py, pz) = (31.3879,32.9944,34.4846)
+      Inittial Energy  = 0.0571251
+      Deposit  Energy  = 0
+      Creation Process = primary
+      Group ID = 65535
+      BBox3D:     (0,0,0) => (0,0,0)
+
+      [95mParticle  (PdgCode,TrackID) = (2212,0)[00m ... with Parent (2212,0)
+      Vertex   (x, y, z, t) = (54.6327,78.8265,90.7218,4246.39)
+      Momentum (px, py, pz) = (67.1892,-306.918,-311.78)
+      Inittial Energy  = 1.03744
+      Deposit  Energy  = 0
+      Creation Process = primary
+      Group ID = 65535
+      BBox3D:     (0,0,0) => (0,0,0)
+
+      [95mParticle  (PdgCode,TrackID) = (22,0)[00m ... with Parent (22,0)
+      Vertex   (x, y, z, t) = (54.6327,78.8265,90.7218,4246.39)
+      Momentum (px, py, pz) = (-11.6317,89.9628,-74.4499)
+      Inittial Energy  = 0.117352
+      Deposit  Energy  = 0
+      Creation Process = primary
+      Group ID = 65535
+      BBox3D:     (0,0,0) => (0,0,0)
+
+particle_mcst_tree contents:
+      [95mParticle  (PdgCode,TrackID) = (-211,1)[00m ... with Parent (-211,1)
+      Vertex   (x, y, z, t) = (57.2003,77.7904,90.8051,4246.39)
+      Momentum (px, py, pz) = (129.095,-56.0446,-432.816)
+      Inittial Energy  = 476.042
+      Deposit  Energy  = 217.181
+      Creation Process = primary
+      Group ID = 65535
+      BBox3D:     (54.75,75.75,0.25) => (102.25,94.75,90.75)
+          Plane 0 BBox2D:     (54.75,75.75) => (102.25,94.75)
+          Plane 1 BBox2D:     (75.75,0.25) => (94.75,90.75)
+          Plane 2 BBox2D:     (0.25,54.75) => (90.75,102.25)
+
+      [95mParticle  (PdgCode,TrackID) = (1000010020,393)[00m ... with Parent (-211,1)
+      Vertex   (x, y, z, t) = (124.434,97.2938,-9.8796,4251.67)
+      Momentum (px, py, pz) = (261.655,-22.2182,-33.2313)
+      Inittial Energy  = 1894.2
+      Deposit  Energy  = 0
+      Creation Process = hBertiniCaptureAtRest
+      Group ID = 65535
+      BBox3D:     (0,0,0) => (0,0,0)
+          Plane 0 BBox2D:     (771,5770) => (777,5799)
+          Plane 1 BBox2D:     (1200,5770) => (1206,5799)
+          Plane 2 BBox2D:     (1302,5770) => (1308,5799)
+
+      [95mParticle  (PdgCode,TrackID) = (2212,3)[00m ... with Parent (2212,3)
+      Vertex   (x, y, z, t) = (57.2003,77.7904,90.8051,4246.39)
+      Momentum (px, py, pz) = (67.1892,-306.918,-311.78)
+      Inittial Energy  = 1037.44
+      Deposit  Energy  = 22.6042
+      Creation Process = primary
+      Group ID = 65535
+      BBox3D:     (54.75,76.75,88.75) => (55.25,78.75,90.75)
+          Plane 0 BBox2D:     (54.75,76.75) => (55.25,78.75)
+          Plane 1 BBox2D:     (76.75,88.75) => (78.75,90.75)
+          Plane 2 BBox2D:     (88.75,54.75) => (90.75,55.25)
+
+      [95mParticle  (PdgCode,TrackID) = (2212,182)[00m ... with Parent (2212,3)
+      Vertex   (x, y, z, t) = (57.8087,75.8052,88.743,4246.63)
+      Momentum (px, py, pz) = (14.0618,142.271,75.468)
+      Inittial Energy  = 952.097
+      Deposit  Energy  = 13.8249
+      Creation Process = protonInelastic
+      Group ID = 65535
+      BBox3D:     (55.25,76.75,88.75) => (55.25,76.75,88.75)
+          Plane 0 BBox2D:     (55.25,76.75) => (55.25,76.75)
+          Plane 1 BBox2D:     (76.75,88.75) => (76.75,88.75)
+          Plane 2 BBox2D:     (88.75,55.25) => (88.75,55.25)
+
+      [95mParticle  (PdgCode,TrackID) = (11,2)[00m ... with Parent (11,2)
+      Vertex   (x, y, z, t) = (57.2003,77.7904,90.8051,4246.39)
+      Momentum (px, py, pz) = (31.3879,32.9944,34.4846)
+      Inittial Energy  = 57.1251
+      Deposit  Energy  = 56.5556
+      Creation Process = primary
+      Group ID = 65535
+      BBox3D:     (51.75,78.75,89.75) => (73.75,101.25,107.25)
+          Plane 0 BBox2D:     (51.75,78.75) => (73.75,101.25)
+          Plane 1 BBox2D:     (78.75,89.75) => (101.25,107.25)
+          Plane 2 BBox2D:     (89.75,51.75) => (107.25,73.75)
+
+      [95mParticle  (PdgCode,TrackID) = (22,4)[00m ... with Parent (22,4)
+      Vertex   (x, y, z, t) = (57.2003,77.7904,90.8051,4246.39)
+      Momentum (px, py, pz) = (-11.6317,89.9628,-74.4499)
+      Inittial Energy  = 117.352
+      Deposit  Energy  = 84.6513
+      Creation Process = primary
+      Group ID = 65535
+      BBox3D:     (10.75,59.75,52.25) => (69.25,122.25,84.25)
+          Plane 0 BBox2D:     (10.75,59.75) => (69.25,122.25)
+          Plane 1 BBox2D:     (59.75,52.25) => (122.25,84.25)
+          Plane 2 BBox2D:     (52.25,10.75) => (84.25,69.25)
+
+
+Multiplicity values: [1 2 3 4 5]
+Multiplicity counts: [  17 2545 2422 2552 2464]
+Event counts with at least 1 electron or muon: 6371
+Event counts with at least 1 gamma ray: 6208
+Particle 0 has TrackID 1 and PDG -211 with 139 non-zero pixels!
+Particle 1 has TrackID 393 and PDG 1000010020 with 0 non-zero pixels!
+Particle 2 has TrackID 3 and PDG 2212 with 6 non-zero pixels!
+Particle 3 has TrackID 182 and PDG 2212 with 2 non-zero pixels!
+Particle 4 has TrackID 2 and PDG 11 with 104 non-zero pixels!
+Particle 5 has TrackID 4 and PDG 22 with 164 non-zero pixels!
+Image from image2d_data_tree ... mean 0.6285 pixel count 283
+Image from cluster2d_data_tree ... mean 0.6024 pixel count 410
+Image from image2d_data_tree ... mean 145.5 pixel count 283
+Image from cluster2d_data_tree ... mean 137.3 pixel count 284
