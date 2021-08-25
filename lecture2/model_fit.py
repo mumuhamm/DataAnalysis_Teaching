@@ -26,8 +26,8 @@ plt.plot(x0, m_true * x0 + b_true, "k", alpha=0.3, lw=3)
 plt.xlim(0, 10)
 plt.xlabel("x")
 plt.ylabel("y")
-plt.show()
-
+#plt.show()
+plt.savefig("truemodel.pdf")
 
 A = np.vander(x, 2)
 C = np.diag(yerr * yerr)
@@ -45,7 +45,8 @@ plt.legend(fontsize=14)
 plt.xlim(0, 10)
 plt.xlabel("x")
 plt.ylabel("y");
-plt.show()
+#plt.show()
+plt.savefig("leastsquar_estimate.pdf")
 
 def log_likelihood(theta, x, y, yerr):
     m, b, log_f = theta
@@ -72,8 +73,8 @@ plt.legend(fontsize=14)
 plt.xlim(0, 10)
 plt.xlabel("x")
 plt.ylabel("y")
-plt.show()
-
+#plt.show()
+plt.savefig("maxlikelihood_estimate.pdf")
 
 def log_prior(theta):
     m, b, log_f = theta
@@ -103,7 +104,8 @@ for i in range(ndim):
     ax.yaxis.set_label_coords(-0.1, 0.5)
 
 axes[-1].set_xlabel("step number")
-plt.show()
+#plt.show()
+plt.savefig("Marginalization.pdf")
 tau = sampler.get_autocorr_time()
 print(tau)
 
@@ -115,7 +117,7 @@ fig = corner.corner(
     flat_samples, labels=labels, truths=[m_true, b_true, np.log(f_true)]
 )
 plt.show()
-
+#plt.savefig("corner.pdf")
 inds = np.random.randint(len(flat_samples), size=100)
 for ind in inds:
     sample = flat_samples[ind]
@@ -127,6 +129,7 @@ plt.xlim(0, 10)
 plt.xlabel("x")
 plt.ylabel("y")
 plt.show()
+#plt.savefig("projection.pdf")
 
 for i in range(ndim):
     mcmc = np.percentile(flat_samples[:, i], [16, 50, 84])
