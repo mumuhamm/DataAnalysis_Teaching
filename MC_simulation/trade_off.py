@@ -1,3 +1,6 @@
+
+# for detail discussions please look at Nicolo Cosimo Albanese's blog 
+
 import numpy as np
 import matplotlib.pyplot as plt
 from random import randint
