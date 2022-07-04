@@ -45,6 +45,7 @@ void cutflow_test(){
     
   }
   TCanvas *c = new TCanvas();
+   TCanvas *cut = new TCanvas();
    h1->GetXaxis()->SetBinLabel(1,"pT>120");
    h1->GetXaxis()->SetBinLabel(2,"pT>100" );
    h1->GetXaxis()->SetBinLabel(3,"pT>80");
@@ -52,3 +53,11 @@ void cutflow_test(){
    h1->GetXaxis()->SetBinLabel(5,"pT>40");
   h1->Draw();
 }
+TCanvas *cut = new TCanvas();
+h1->GetXaxis()->SetBinLabel(1,"trhits>12");
+h1->GetXaxis()->SetBinLabel(2,"trchi2<10" );
+h1->GetXaxis()->SetBinLabel(3,"idhits>6");
+h1->GetXaxis()->SetBinLabel(4,"idchi2<5");
+h1->GetXaxis()->SetBinLabel(5,"ddg0<8");
+h1->GetXaxis()->SetBinLabel(5,"dg0<20");
+h1->Draw();

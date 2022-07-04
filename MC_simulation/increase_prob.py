@@ -8,7 +8,7 @@ import numpy as np
 #x1 is the desired choice  , prob 1/4
 #x2 is not the desired choice, prob 3/4
 # three x2 and one x1
-# Please extend it to n dimesion 
+# Please extend it to n dimension 
 
 choice = ["x1", "x2", "x2", "x2"]
 switch_prob = []

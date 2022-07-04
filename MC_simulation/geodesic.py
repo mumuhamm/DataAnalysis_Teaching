@@ -22,3 +22,6 @@ geod = Timelike(
 gpl = GeodesicPlotter()
 gpl.plot(geod)
 gpl.show()
+
+
+
