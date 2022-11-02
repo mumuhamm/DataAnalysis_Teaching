@@ -1,4 +1,4 @@
-// Authors: Md Alibordi, Alberto Bragagnolo, Enrico Lusiani
+// Authors: Md Alibordi
 #pragma once
 
 #include "RooDataSet.h"

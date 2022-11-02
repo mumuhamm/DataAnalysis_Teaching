@@ -1,4 +1,4 @@
-// Author Md Alibordi, Giacomo Fedi, Enrico Lusiani
+// Author Md Alibordi, Giacomo Fedi
 #pragma once
 
 #include "TTree.h"

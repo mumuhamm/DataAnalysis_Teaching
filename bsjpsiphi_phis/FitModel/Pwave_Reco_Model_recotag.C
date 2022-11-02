@@ -1,4 +1,4 @@
-//Authors: Md Alibordi, Alberto Bragagnolo, Giacomo Fedi, Enrico Lusiani
+//Authors: Md Alibordi
 
 #include "TTree.h"
 #include "TFile.h"

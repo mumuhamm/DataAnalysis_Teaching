@@ -1,4 +1,4 @@
-
+//Author: Md. Alibordi
 void plotSlices(TH3* numHist, TH3* denHist, RooAbsReal& projectedFunc, const RooArgSet& vars, int maxOrder, int xbins, int ybins, int zbins, TString suffix) {
   using namespace RooFit;
   
