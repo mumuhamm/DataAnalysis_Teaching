@@ -1,0 +1,17 @@
+*.d
+*.so
+*.pcm
+*.pdf
+*.root
+*ctErrPdf.C*
+*ct.C*
+*phi.C*
+*massPlot.C*
+*cospsi.C*
+*costheta.C*
+*angEffPlot.C*
+*Order.pdf.C*
+*ctEffPlot.C*
+*ctPullPlot.C*
+*ctResPlot.C*
+*.dot

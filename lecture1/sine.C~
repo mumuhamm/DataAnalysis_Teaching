@@ -1,0 +1,41 @@
+#include <iostream>
+#include <cmath>
+#include "TString.h"//includes Root way of making strings
+#include "TTree.h"
+#include <TTree.h>
+#include <TChain.h>
+
+#include "TMath.h"
+#include "TLorentzVector.h"
+using namespace std;
+
+float fact(int n)
+{ int prod = 1;
+  for (int j =1 ; j<=n; j++)
+    {   prod =prod*j;
+    }
+  return prod ;
+}
+
+int main ()
+
+{ 
+       
+
+
+  TProfile * sin_plot = new TProfile("sin_plot", "sin(x); x  (rad) ; sin(x) (a.u.)", 100, 0, TMATH::PI(), 100, -1, +1);
+       float xmin = 0; 
+       float xmax = M_PI; 
+       float sinx =0;
+       float h = 1000; // interval ratio
+       float s = (xmax - xmin)/h; //steps for the iteration
+       float xvar = xmin + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(xmax-xmin)));   
+       for( float i = 0 ; i <= 10e06 ; i ++ )
+	 {
+             sinx = sinx + (pow((-1), i)*pow(xvar, (2*i+1)))/fact((2*i+1));
+             sin_plot->Fill(xvar, sinx, 1);
+	 }
+       TCanvas * bplot = new TCanvas("bplot", "plot of sin x ", 600, 600);
+       sin_plot->Draw("colz");
+
+}
